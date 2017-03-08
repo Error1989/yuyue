@@ -1,0 +1,12 @@
+[ 2016-12-14T22:22:39+08:00 ] ::1 /yuyue/Public/fonts/fontawesome-webfont.woff?v=4.1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+ERR: 无法加载模块:Public
+
+[ 2016-12-14T22:22:39+08:00 ] ::1 /yuyue/Public/fonts/fontawesome-webfont.ttf?v=4.1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+ERR: 无法加载模块:Public
+

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>患者预约系统</title>
+
+    <!-- Bootstrap -->
+    <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="__PUBLIC__/css/bootstrap-theme.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+	 td {height:60px;}
+	</style>
+	<script>
+  window.onload=function(){
+  if({$data.sex}==0){
+    document.getElementsByName('sex')[1].checked='checked';
+   }else{
+    document.getElementsByName('sex')[0].checked='checked';
+   }
+  }
+</script>
+  </head>
+  <body>
+  <div class="container">
+<include file="head" />
+<form class="form-horizontal templatemo-contact-form-1" role="form" action="__URL__/creat" method="post">
+<input type='hidden' name='id' value='{$data.id}'>
+				<div class="form-group">
+					<div class="col-md-12">
+						<h1 class="margin-bottom-15">添加医院信息</h1>
+						<p>请填写相关信息.</p>
+					</div>
+				</div>				
+		        <div class="form-group">
+		          <div class="col-md-12">		          	
+		            <label for="name" class="control-label">医院名称 *</label>
+		            <div class="templatemo-input-icon-container">
+		            	<i class="fa fa-user"></i>
+		            	<input type="text" class="form-control" placeholder="" name="name">
+		            </div>		            		            		            
+		          </div>              
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+		            <input type="submit" value="提　交" class="btn btn-success pull-right">
+		          </div>
+		        </div>		    	
+		      </form>		      
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+  </body>
+</html>
